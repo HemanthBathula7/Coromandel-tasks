@@ -1,0 +1,124 @@
+.ourbread {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    text-align: center;
+}
+
+.breadtext h1 {
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.breadtext p {
+    font-style: italic;
+    color: #636363;
+    margin: 30px 150px;
+}
+
+.breads-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin: 0 50px 50px 50px;
+}
+
+.bread {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.bread img {
+    width: 300px;
+    height: 300px;
+    cursor: pointer;
+    object-fit: cover;
+}
+
+
+@media (max-width: 1040px) {
+    .breadtext h1 {
+        font-size: 42px;
+    }
+    .breadtext p {
+        margin: 20px 80px;
+    }
+    .breads-container {
+        margin: 0 30px 40px 30px;
+    }
+    .bread img {
+        width: 280px;
+        height: 280px;
+    }
+}
+
+
+@media (max-width: 820px) {
+    .ourbread {
+        padding: 40px 20px;
+    }
+    .breadtext h1 {
+        font-size: 34px;
+    }
+    .breadtext p {
+        margin: 20px 20px;
+        font-size: 15px;
+    }
+    .breads-container {
+        margin: 0 0 30px 0;
+        gap: 20px;
+    }
+    .bread img {
+        width: 240px;
+        height: 240px;
+    }
+}
+
+
+@media (max-width: 640px) {
+    .ourbread {
+        padding: 35px 15px;
+    }
+    .breadtext h1 {
+        font-size: 28px;
+    }
+    .breadtext p {
+        margin: 12px 5px;
+        font-size: 14px;
+    }
+    .breads-container {
+        margin: 0 0 20px 0;
+        gap: 15px;
+    }
+    .bread img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 440px) {
+    .ourbread {
+        padding: 25px 10px;
+    }
+    .breadtext h1 {
+        font-size: 24px;
+    }
+    .breadtext p {
+        margin: 10px 0;
+        font-size: 13px;
+    }
+    .breads-container {
+        gap: 12px;
+        margin: 0 0 15px 0;
+    }
+    .bread img {
+        width: calc(50vw - 25px);
+        height: calc(50vw - 25px);
+        max-width: 190px;
+        max-height: 190px;
+    }
+}

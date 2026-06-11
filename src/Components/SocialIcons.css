@@ -1,0 +1,9 @@
+.social-icons {
+    display: flex;
+    gap: 20px;
+
+}
+
+.social-icons a {
+  color: black;
+}
